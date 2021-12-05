@@ -14,10 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = TestVC()
         window?.makeKeyAndVisible()
         return true
     }
     
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        SocketService.instance.establishSocketIO()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        SocketService.instance.stopSocketIO()
+    }
 }
 

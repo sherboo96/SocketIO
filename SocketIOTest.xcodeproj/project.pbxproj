@@ -11,16 +11,22 @@
 		916BD93F270B5239009A04F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BD93E270B5239009A04F5 /* AppDelegate.swift */; };
 		916BD948270B5240009A04F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916BD947270B5240009A04F5 /* Assets.xcassets */; };
 		916BD94B270B5240009A04F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916BD949270B5240009A04F5 /* LaunchScreen.storyboard */; };
+		91C972EE275CCC52000EBFF5 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C972ED275CCC52000EBFF5 /* SocketService.swift */; };
+		91C972F2275CD462000EBFF5 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C972F0275CD462000EBFF5 /* TestVC.swift */; };
+		91C972F3275CD462000EBFF5 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C972F1275CD462000EBFF5 /* TestVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A4FDBAF03587D495F9F5C39 /* Pods_SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5DE9BD2EA77C674E40A98F /* Pods-SocketIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO.release.xcconfig"; path = "Target Support Files/Pods-SocketIO/Pods-SocketIO.release.xcconfig"; sourceTree = "<group>"; };
-		916BD93B270B5239009A04F5 /* SocketIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		916BD93B270B5239009A04F5 /* SocketIOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916BD93E270B5239009A04F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		916BD947270B5240009A04F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		916BD94A270B5240009A04F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916BD94C270B5240009A04F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C972ED275CCC52000EBFF5 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		91C972F0275CD462000EBFF5 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		91C972F1275CD462000EBFF5 /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
 		CA7FE32771EB3A8F1E89FDD6 /* Pods-SocketIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO.debug.xcconfig"; path = "Target Support Files/Pods-SocketIO/Pods-SocketIO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,7 +48,6 @@
 				CA7FE32771EB3A8F1E89FDD6 /* Pods-SocketIO.debug.xcconfig */,
 				1D5DE9BD2EA77C674E40A98F /* Pods-SocketIO.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -59,7 +64,7 @@
 		916BD93C270B5239009A04F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				916BD93B270B5239009A04F5 /* SocketIO.app */,
+				916BD93B270B5239009A04F5 /* SocketIOTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +72,8 @@
 		916BD93D270B5239009A04F5 /* SocketIO */ = {
 			isa = PBXGroup;
 			children = (
+				91C972EF275CD448000EBFF5 /* Senes */,
+				91C972EB275CCC28000EBFF5 /* Services */,
 				916BD952270B534E009A04F5 /* Delegates */,
 				916BD953270B535D009A04F5 /* Resources */,
 				916BD94C270B5240009A04F5 /* Info.plist */,
@@ -91,6 +98,31 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		91C972EB275CCC28000EBFF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91C972EC275CCC2D000EBFF5 /* SocketServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91C972EC275CCC2D000EBFF5 /* SocketServices */ = {
+			isa = PBXGroup;
+			children = (
+				91C972ED275CCC52000EBFF5 /* SocketService.swift */,
+			);
+			path = SocketServices;
+			sourceTree = "<group>";
+		};
+		91C972EF275CD448000EBFF5 /* Senes */ = {
+			isa = PBXGroup;
+			children = (
+				91C972F0275CD462000EBFF5 /* TestVC.swift */,
+				91C972F1275CD462000EBFF5 /* TestVC.xib */,
+			);
+			path = Senes;
+			sourceTree = "<group>";
+		};
 		FDD7486387305C1B7342E8D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,23 +134,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		916BD93A270B5239009A04F5 /* SocketIO */ = {
+		916BD93A270B5239009A04F5 /* SocketIOTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 916BD94F270B5240009A04F5 /* Build configuration list for PBXNativeTarget "SocketIO" */;
+			buildConfigurationList = 916BD94F270B5240009A04F5 /* Build configuration list for PBXNativeTarget "SocketIOTest" */;
 			buildPhases = (
 				80C1F3EE41CD3237E3615CC9 /* [CP] Check Pods Manifest.lock */,
 				916BD937270B5239009A04F5 /* Sources */,
 				916BD938270B5239009A04F5 /* Frameworks */,
 				916BD939270B5239009A04F5 /* Resources */,
-				D1F299FFEDED515795135B3B /* [CP] Embed Pods Frameworks */,
+				BA8C55698AC0A98C5EC07DC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SocketIO;
+			name = SocketIOTest;
 			productName = SocketIO;
-			productReference = 916BD93B270B5239009A04F5 /* SocketIO.app */;
+			productReference = 916BD93B270B5239009A04F5 /* SocketIOTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 916BD936270B5239009A04F5 /* Build configuration list for PBXProject "SocketIO" */;
+			buildConfigurationList = 916BD936270B5239009A04F5 /* Build configuration list for PBXProject "SocketIOTest" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				916BD93A270B5239009A04F5 /* SocketIO */,
+				916BD93A270B5239009A04F5 /* SocketIOTest */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +193,7 @@
 			files = (
 				916BD94B270B5240009A04F5 /* LaunchScreen.storyboard in Resources */,
 				916BD948270B5240009A04F5 /* Assets.xcassets in Resources */,
+				91C972F3275CD462000EBFF5 /* TestVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +222,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1F299FFEDED515795135B3B /* [CP] Embed Pods Frameworks */ = {
+		BA8C55698AC0A98C5EC07DC2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C972EE275CCC52000EBFF5 /* SocketService.swift in Sources */,
+				91C972F2275CD462000EBFF5 /* TestVC.swift in Sources */,
 				916BD93F270B5239009A04F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +397,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +426,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,7 +443,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		916BD936270B5239009A04F5 /* Build configuration list for PBXProject "SocketIO" */ = {
+		916BD936270B5239009A04F5 /* Build configuration list for PBXProject "SocketIOTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				916BD94D270B5240009A04F5 /* Debug */,
@@ -415,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		916BD94F270B5240009A04F5 /* Build configuration list for PBXNativeTarget "SocketIO" */ = {
+		916BD94F270B5240009A04F5 /* Build configuration list for PBXNativeTarget "SocketIOTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				916BD950270B5240009A04F5 /* Debug */,
